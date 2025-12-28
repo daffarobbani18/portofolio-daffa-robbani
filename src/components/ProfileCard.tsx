@@ -6,9 +6,9 @@ import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
 
 export default function ProfileCard() {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:hello@example.com', label: 'Email' },
+    { icon: Github, href: 'https://github.com/daffarobbani18', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/daffa-robbani-584780371/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:d.robbani18@gmail.com', label: 'Email' },
   ];
 
   return (

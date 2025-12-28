@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Twitter, Copy, Check } from 'lucide-react';
+import { Github, Linkedin, Mail, Instagram, Copy, Check } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Footer() {
@@ -19,9 +19,9 @@ export default function Footer() {
   };
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+    { icon: Github, href: 'https://github.com/daffarobbani18', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/daffa-robbani-584780371/', label: 'LinkedIn' },
+    { icon: Instagram, href: 'https://instagram.com/_dafffffa/', label: 'Instagram' },
     { icon: Mail, href: `mailto:${email}`, label: 'Email' },
   ];
 
