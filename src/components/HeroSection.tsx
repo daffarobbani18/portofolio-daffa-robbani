@@ -29,7 +29,7 @@ export default function HeroSection() {
     },
   };
 
-  const title = 'Creative Technologist';
+  const title = 'Full Stack Developer';
   const words = title.split(' ');
 
   return (
@@ -93,7 +93,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 1 }}
           className="text-lg md:text-xl text-gray-300 max-w-2xl mb-10"
         >
-          Merancang pengalaman digital yang inovatif dengan teknologi modern dan kreativitas tanpa batas
+          Membangun solusi digital yang aman dan scalable dengan keahlian Full Stack Development, DevOps, dan Cybersecurity
         </motion.p>
 
         {/* CTA Button dengan Magnetic Hover */}

@@ -78,7 +78,7 @@ export default function AboutSection() {
           >
             Hi, I'm{' '}
             <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-              Alex Johnson
+              Daffa Robbani
             </span>
           </motion.h2>
 
@@ -90,7 +90,7 @@ export default function AboutSection() {
             transition={{ delay: 0.6 }}
             className="text-xl text-purple-400 font-semibold mb-6"
           >
-            Full Stack Developer & UI Enthusiast
+            Full Stack Web Developer | DevOps | Cybersecurity
           </motion.p>
 
           {/* Bio Paragraf */}
@@ -102,13 +102,14 @@ export default function AboutSection() {
             className="space-y-4 text-gray-400 leading-relaxed mb-8"
           >
             <p>
-              Saya passionate dalam menciptakan pengalaman digital yang indah dan fungsional. 
-              Dengan background dalam desain dan pengembangan, saya menggabungkan estetika 
-              visual dengan kode yang bersih untuk menghasilkan produk yang luar biasa.
+              Saya passionate dalam membangun solusi digital yang aman, scalable, dan efisien. 
+              Dengan keahlian di Full Stack Web Development, saya mengembangkan aplikasi end-to-end 
+              dari frontend hingga backend dengan best practices dan clean code.
             </p>
             <p>
-              Specialized dalam React ecosystem, TypeScript, dan modern web technologies. 
-              Saya percaya bahwa detail kecil membuat perbedaan besar dalam user experience.
+              Specialized dalam DevOps practices untuk automation dan CI/CD pipeline, 
+              serta Cybersecurity untuk memastikan aplikasi yang dibangun terlindungi dari berbagai ancaman. 
+              Saya percaya bahwa keamanan dan infrastructure yang solid adalah fondasi dari setiap aplikasi yang sukses.
             </p>
           </motion.div>
 

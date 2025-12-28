@@ -58,7 +58,7 @@ export default function ProfileCard() {
           className="text-2xl font-bold mb-1"
           style={{ fontFamily: 'var(--font-space-grotesk)' }}
         >
-          John Doe
+          Daffa Robbani
         </motion.h3>
         
         <motion.p
@@ -67,7 +67,7 @@ export default function ProfileCard() {
           transition={{ delay: 0.4 }}
           className="text-purple-400 font-medium mb-3"
         >
-          Full Stack Developer
+          Full Stack | DevOps | Cybersecurity
         </motion.p>
 
         <motion.div
@@ -86,8 +86,8 @@ export default function ProfileCard() {
           transition={{ delay: 0.6 }}
           className="text-zinc-400 text-sm leading-relaxed"
         >
-          Passionate about creating beautiful, functional, and user-centric digital experiences. 
-          Specialized in modern web technologies and AI integration.
+          Passionate about building secure and scalable digital solutions. 
+          Specialized in Full Stack Web Development, DevOps practices, and Cybersecurity.
         </motion.p>
       </div>
 
