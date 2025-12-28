@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+  --electric-purple: #a855f7;
+  --cyan-blue: #06b6d4;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+/* Aurora Blob Animation */
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  25% {
+    transform: translate(100px, -80px) scale(1.15);
+  }
+  50% {
+    transform: translate(-80px, 100px) scale(0.9);
+  }
+  75% {
+    transform: translate(80px, 80px) scale(1.1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite ease-in-out;
+}
+
+.animation-delay-2 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4 {
+  animation-delay: 4s;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Glassmorphism Utility */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Gradient Border Utility */
+.gradient-border {
+  position: relative;
+  background: linear-gradient(135deg, #a855f7, #06b6d4);
+  padding: 2px;
+  border-radius: 12px;
+}
+
+.gradient-border > * {
+  background: var(--background);
+  border-radius: 10px;
+}
+
+/* Glow Effect */
+.glow-purple {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4),
+              0 0 40px rgba(168, 85, 247, 0.2);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.4),
+              0 0 40px rgba(6, 182, 212, 0.2);
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Film Grain / Noise Texture */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: grain 8s steps(10) infinite;
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(-5%, 25%); }
+  50% { transform: translate(-15%, 10%); }
+  60% { transform: translate(15%, 0%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(3%, 35%); }
+  90% { transform: translate(-10%, 10%); }
+}
+
+/* 404 Glitch Effect */
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 2px 0 #ff0000, -2px -2px 0 #00ffff;
+    transform: translate(0);
+  }
+  20% {
+    text-shadow: -2px 2px 0 #ff0000, 2px -2px 0 #00ffff;
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    text-shadow: 2px -2px 0 #ff0000, -2px 2px 0 #00ffff;
+    transform: translate(2px, -2px);
+  }
+  60% {
+    text-shadow: -2px -2px 0 #ff0000, 2px 2px 0 #00ffff;
+    transform: translate(-2px, -2px);
+  }
+  80% {
+    text-shadow: 2px 2px 0 #ff0000, -2px -2px 0 #00ffff;
+    transform: translate(2px, 2px);
+  }
+  100% {
+    text-shadow: 2px 2px 0 #ff0000, -2px -2px 0 #00ffff;
+    transform: translate(0);
+  }
+}
+
+.glitch {
+  animation: glitch 0.5s infinite;
+}
+
+/* Blink Animation */
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0.3;
+  }
+}
+
+.animate-blink {
+  animation: blink 2s ease-in-out infinite;
+}
+
+/* TV Static */
+.tv-static {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='staticFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='5' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23staticFilter)' opacity='0.15'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  animation: grain 0.2s steps(5) infinite;
+}
